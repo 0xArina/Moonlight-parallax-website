@@ -35,27 +35,46 @@ header .logo {
     letter-spacing: 2px;
 }
 
-header ul {
+
+header .navbar {
     display: flex;
     justify-content: center;
 }
 
-header ul li {
+header .navbar li {
     list-style: none;
     margin-left: 20px;
 }
 
-header ul li a {
+header .navbar li a {
     text-decoration: none;
     padding: 6px 15px;
     color: #fff;
     border-radius: 20px;
 }
 
-header ul li a:hover,
-header ul li a.active {
+header .navbar li a:hover,
+header .navbar li a.active {
     background: #fff;
     color: #2b1055;
+}
+
+header .toggle-button {
+    position: absolute;
+    right: 6rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+
+header .toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
 }
 
 section {
@@ -133,4 +152,26 @@ section img#mountains_front {
 .sec p {
     font-size: 1.2em;
     color: #fff;
+}
+
+/******** MEDIA QUERIES ************/
+@media(max-width: 729px) {
+
+
+    header .toggle-button {
+        display: flex;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .navbar li {
+        display: none;
+
+
+    }
+
 }

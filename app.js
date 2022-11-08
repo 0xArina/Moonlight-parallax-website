@@ -5,6 +5,8 @@ let btn = document.getElementById('btn');
 let mountains_front = document.getElementById('mountains_front');
 let header = document.querySelector('header');
 
+
+// parallax effect
 window.addEventListener('scroll', function () {
     let value = window.scrollY;
     stars.style.left = value * 0.25 + 'px';
